@@ -24,7 +24,6 @@ const Home = () => {
   ]
 
   const getUrl = () => {
-    console.log(filters)
     let url = import.meta.env.VITE_API_URL + "cars"
 
     let filtersApplied = false
@@ -76,12 +75,7 @@ const Home = () => {
     })
   }
 
-  //useEffect(() => {
-  //  handleFetchData()
-  //}, [])
-
   useEffect(() => {
-    console.log("calling data")
     handleFetchData()
   }, [filters])
 

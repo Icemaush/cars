@@ -4,6 +4,8 @@ export interface Car {
   model: string
   year: number
   colour: string
+  registration?: string
+  status?: string
 }
 
 export interface CarSearchFilterObject {

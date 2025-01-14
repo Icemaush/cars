@@ -4,7 +4,7 @@ import { DataTableProps } from "./DataTable.types";
 const DataTable = (props: DataTableProps) => (
   <Box>
     <TableContainer component={Paper}>
-      <Table sx={{ minWidth: 650 }} aria-label="simple table">
+      <Table sx={{ minWidth: 650 }} aria-label="simple table" size={"small"}>
         <TableHead>
           <TableRow>
             {props.columns.map((column) => (
@@ -13,13 +13,13 @@ const DataTable = (props: DataTableProps) => (
           </TableRow>
         </TableHead>
         <TableBody>
-          {props.rows.map((row) => (
+          {props.rows && props.rows.map((row) => (
             <TableRow
               key={row.key}
               sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
             >
               {row.data.map((value) => (
-                <TableCell align={"center"}>{value}</TableCell>
+                <TableCell align={"center"} sx={{ color: row.data[6] === "Expired" ? "red" : "green" }}>{value}</TableCell>
               ))}
             </TableRow>
           ))}

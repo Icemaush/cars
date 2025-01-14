@@ -5,5 +5,5 @@ export interface DataTableRow {
 
 export interface DataTableProps {
   columns: string[]
-  rows: DataTableRow[]
+  rows: DataTableRow[] | undefined
 }

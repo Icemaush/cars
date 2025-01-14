@@ -11,7 +11,7 @@ namespace cars.Server.Repositories
 
         public CarRepository()
         {
-            cars = Cars.GetCars();
+            cars = Cars.GetCarsFromJson();
         }
 
         public List<Car> GetAll(CarsQueryObject query)
@@ -27,7 +27,6 @@ namespace cars.Server.Repositories
             {
                 data = data.Where(c => c.Model.Contains(query.Model));
             }
-
 
             return data.ToList();
         }

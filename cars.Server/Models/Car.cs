@@ -11,5 +11,7 @@
         public int Year { get; set; }
 
         public string Colour { get; set; }
+
+        public string Registration { get; set; }
     }
 }
