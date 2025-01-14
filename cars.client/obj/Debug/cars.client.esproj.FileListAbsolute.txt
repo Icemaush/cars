@@ -1,1 +1,2 @@
 C:\Users\rpier\Projects\cars\cars.client\obj\Debug\cars.client.esproj.CoreCompileInputs.cache
+C:\Users\rpier\Projects\test\cars\cars.client\obj\Debug\cars.client.esproj.CoreCompileInputs.cache
